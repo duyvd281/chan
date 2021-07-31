@@ -27,7 +27,7 @@ const authClient = new google.auth.JWT(
             auth: authClient,
             spreadsheetId: "1JrGS9xdOybVbpWTMOVK5mF8irfxxMy9r_Z2UNJC_YPQ",
             range: "A:F",
-        });
+        })
         // All of the answers
         const answers = [];
         const nhathuoc = [];
@@ -35,7 +35,7 @@ const authClient = new google.auth.JWT(
         const thuoc_sl = []
 
         // Set rows to equal the rows
-        const rows = res.data.values;
+        const rows = res.data.values
 
         // Check if we have any data and if we do add it to our answers array
         if (rows.length) {
